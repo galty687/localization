@@ -3,16 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-翻译与本地化工程
+翻译与本地化工程实务
 ====================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: 第一章：本地化工程概述
 
+   1-introduction/localization-intro.rst
+
 .. toctree::
    :maxdepth: 2
    :caption: 第二章：简单文档本地化
+
+   2-easy_files/hidden-method-word
+   2-easy_files/style-method-word
    
 
 .. toctree::
