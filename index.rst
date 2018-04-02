@@ -18,6 +18,7 @@
 
    2-easy_files/hidden-method-word
    2-easy_files/style-method-word
+   2-easy_files/
    
 
 .. toctree::
@@ -32,6 +33,7 @@
    4_xml/xml-intro
    4_xml/xml-parse
    4_xml/conditional-xml
+   4_xmlx/xml-cdata
 
 
 
