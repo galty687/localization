@@ -39,7 +39,7 @@
    :maxdepth: 2
    :caption: 软件本地化综合实践
 
-    7_capstone_project/project-overview
+   7_capstone_project/project-overview.rst
 
 
 
