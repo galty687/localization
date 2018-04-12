@@ -5,6 +5,7 @@ OmegaT UI
 语言资源识别
 ===================
 Java 开发的程序，语言资源一般存储在.properties中，具体到这个项目，需要翻译的内容为：
+
 * scripts文件中的各properties文件
 * src/org/omegat中的Bundle.properties
 
