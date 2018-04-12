@@ -25,6 +25,6 @@
 
 #. 《软件本地化》，王华伟 崔启亮，电子工业出版社，2005年
 #. 《国际化软件测试》，崔启亮 胡一鸣，电子工业出版社，2006年
-#. Develop International Software, 2nd Edition，Microsoft Corporation
-#. A Practical Guide to Software Localization, Bert Esselink
-#. 
+#.  Develop International Software, 2nd Edition，Microsoft Corporation，2002
+#.  A Practical Guide to Software Localization, Bert Esselink，2001
+
