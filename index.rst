@@ -49,9 +49,9 @@
    :caption: 软件本地化综合实践
 
    7_capstone_project/project-overview.rst
-   7_capstone_project/OmegaT-website.rst
    7_capstone_project/OmegaTui.rst
    7_capstone_project/omegat-doc.rst
+   7_capstone_project/OmegaT-website.rst
 
 
 
