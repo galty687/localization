@@ -24,6 +24,7 @@ Java 开发的程序，语言资源一般存储在.properties中，具体到这�
 
 指定程序启动的语言
 =============================
+
 在Windows平台下
 * cd [full path to OmegaT]
 * java -jar OmegaT.jar resource-bundle=[name of bundle with full path]
