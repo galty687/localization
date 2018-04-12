@@ -60,7 +60,7 @@
 
 
 
-Indices and tables
+索引和目录
 ==================
 
 * :ref:`genindex`
