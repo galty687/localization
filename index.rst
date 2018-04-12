@@ -50,7 +50,7 @@
 
    7_capstone_project/project-overview.rst
    7_capstone_project/OmegaT-website.rst
-   7_capstone_project/OmegaT-ui.rst
+   7_capstone_project/OmegaTui.rst
    7_capstone_project/omegat-doc.rst
 
 
