@@ -41,7 +41,9 @@
 
    7_capstone_project/project-overview.rst
    7_capstone_project/OmegaT-website.rst
-   7_capstone_project/omegaT-UI.rst
+   7_capstone_project/OmegaT-UI.rst
+   7_capstone_project/omegat-doc
+
 
 
 
