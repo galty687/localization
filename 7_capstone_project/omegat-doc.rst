@@ -22,9 +22,12 @@ omegaT的帮助文档是使用DocBook完成的
 #. 生成译文xml
 
 
-中文版本的发布
-===================
-#. 配置如下依存软件
+中文版帮助文档的编译（Win)
+================================
+
+
+
+#. 安装如下依存软件
     - DocBook XSL Stylesheets 1.75.2 ("dbk")
     - DocBook XML 4.5
     - fop 1.1
@@ -32,4 +35,4 @@ omegaT的帮助文档是使用DocBook完成的
     - Saxon 6-5-5
     - Ant 1.7.1 or above
 
-#. 运行 ``gendoc.bat``  
+#. 运行文件中的批任务 ``gendoc.bat``  
