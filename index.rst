@@ -40,7 +40,9 @@
    :maxdepth: 2
    :caption: 第五章：软件本地化基础
 
-   5_software/  
+   5_software/software-loc-overview.rst
+   5_software/vb-sw-demo.rst
+
 
 .. toctree::
    :maxdepth: 2
