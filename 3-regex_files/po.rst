@@ -5,7 +5,7 @@ PO文件有 Entries 组成。每个 Entry 中包含了原文
 
 PO格式结构结构
 
-..code-block:: po
+::
 
     white-space
     #  translator-comments
