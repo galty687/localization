@@ -24,3 +24,10 @@ PO格式结构
     #: lib/error.c:116
     msgid "Unknown system error"
     msgstr "未知系统错误"
+
+
+
+
+
+参考资料：
+[1]：http://docs.translatehouse.org/projects/localization-guide/en/latest/guide/project/howto.html    
