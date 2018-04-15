@@ -25,6 +25,8 @@
    :maxdepth: 2
    :caption: 第三章：正则表达式分割文本本地化
 
+   3-regex_files/po.rst
+
    
 .. toctree::
    :maxdepth: 2
