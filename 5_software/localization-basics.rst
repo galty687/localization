@@ -7,7 +7,7 @@ Locale
 Locale
     Locale定义了软件处理某个语言与某个国家特殊习惯的方式，例如:时间日期格式、数字，度量单位，货币，每周开始的日子等。
 
-locale的命名方式，通常为 ``ll_cc``。 ll 指的是国际标准 `ISO639 <http://www.loc.gov/standards/iso639-2/php/English_list.php>`_ 的两位语言编码，cc指的是国际标准 ISO3166中的两位国家编码。例如德国德语，ll 为 de，cc 为DE。德国的locale名称为 de_DE。大陆中文则为，zh_CN。
+locale的命名方式，通常为 ``ll_cc``。 ll 指的是国际标准 `ISO639.2 <http://www.loc.gov/standards/iso639-2/php/English_list.php>`_ 的两位语言编码，cc指的是国际标准 ISO3166中的两位国家编码。例如德国德语，ll 为 de，cc 为DE。德国的locale名称为 de_DE。大陆中文则为，zh_CN。
 
 
 
@@ -23,6 +23,14 @@ locale的命名方式，通常为 ``ll_cc``。 ll 指的是国际标准 `ISO639 
      - zh
      - China
      - CN
+   * - French
+     - Fr
+     - France
+     - FR
+   * - German
+     - de
+     - Deutsche
+     - De
    
 
 CLDR
