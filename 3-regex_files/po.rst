@@ -3,7 +3,7 @@ PO格式
 
 PO文件有 Entries 组成。每个 Entry 中包含了原文
 
-PO格式结构结构
+PO格式结构
 
 ::
 
