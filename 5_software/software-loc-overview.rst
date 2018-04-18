@@ -28,3 +28,12 @@
 #.  Develop International Software, 2nd Edition，Microsoft Corporation，2002
 #.  A Practical Guide to Software Localization, Bert Esselink，2001
 
+
+学术期刊
+================
+
+* `Multilingual <https://www.multilingual.com>`_
+
+参考网站：
+
+* `I18nGuy <http://www.i18nguy.com>`_
