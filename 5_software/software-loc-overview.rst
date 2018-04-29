@@ -37,3 +37,6 @@
 参考网站：
 
 * `I18nGuy <http://www.i18nguy.com>`_
+* `Software Localization <http://edutechwiki.unige.ch/en/Software_localization>`_
+* `L10N Guidelines for Developers <https://wiki.gnome.org/TranslationProject/DevGuidelines>`_
+* `GNOME Documentation Style Guide V1.6 <https://developer.gnome.org/gdp-style-guide/2.32/>`_
