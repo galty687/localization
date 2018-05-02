@@ -36,6 +36,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 -----------------
 
 为了演示方便，选择了W3C的HTML页面：`素材 <https://www.w3.org/Style/Examples/011/firstcss.en.html>`_
+
 素材准备：
 
 #. 复制STEP 1 中的html代码，并命名为 index.html
@@ -72,7 +73,12 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 演示Jekyll建站
 ====================
 
-新建 _config.yml文件，配置网站基本信息
+新建Jekyll站点
+-------------------
+
+#. 将index.html放入根目录
+#. 新建css文件夹，并将mystyle.css放图
+#. 新建 _config.yml文件，配置网站基本信息
 
 .. code-block :: html
 
@@ -87,12 +93,16 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 ----------------------------
 
 #. 新建 _layout 文件
-#. 在 layout 文件夹中新建 default.html 
+#. 在 layout 文件夹中新建 default.html
+#. 将css引用改为 {{site.baseurl}}/css/mystyle.css，并增加下方liquid语句
 
-    .. code-block :: Liquid
+::
+
         {{content}}
 
 
+#. 在Terminal中运行 ``jekyll serve ``
+#. 访问 http://127.0.0.1:4000/ 即可访问该站
 
 
 制作其他静态页面
