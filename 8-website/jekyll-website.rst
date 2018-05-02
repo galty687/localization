@@ -55,7 +55,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 最早期的网站，需要不断手动增加所有内容，当内容足够多的时候，基本无法手动维护，很多内容难以复用。
 
-**演示过程如下：**
+**演示过程如下**：
 
 #. 修改index.hml的语言和编码，修改后的代码如下
 
@@ -85,7 +85,10 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 .. code-block :: html
 
         ---
-        layout: default
+        title: 
+        baseurl:
+        languages:
+        
         ---
 
 
