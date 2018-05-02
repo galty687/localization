@@ -57,7 +57,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 **演示过程如下**：
 
-#. 修改index.hml的语言和编码，修改后的代码如下
+1. 修改index.hml的语言和编码，修改后的代码如下
 
 .. code-block:: html
 
@@ -68,7 +68,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
     <link rel="stylesheet" href="mystyle.css"/>
     </head>
 
-#. 增加footer的版权信息，并改变footer的背景色
+2. 增加footer的版权信息，并改变footer的背景色
 
 
 
@@ -82,7 +82,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 #. 新建css文件夹，并将mystyle.css放图
 #. 新建 _config.yml文件，配置网站基本信息
 
-.. code-block :: html
+.. code-block:: html
 
         ---
         title: 
