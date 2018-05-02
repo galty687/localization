@@ -56,7 +56,12 @@
    7_capstone_project/omegat-doc.rst
    7_capstone_project/OmegaT-website.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: 软件本地化综合实践
 
+   8-website/jekyll-website
+   8-website/liquid
 
 
 
