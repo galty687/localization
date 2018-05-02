@@ -35,6 +35,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 为了演示方便，选择了W3C的HTML页面：`素材 <https://www.w3.org/Style/Examples/011/firstcss.en.html>`_
 素材准备：
+
 #. 复制STEP 1 中的html代码，并命名为 index.html
 #. 复制STEP 7 中CSS的代码，并存储为 mystyle.css
 #. 在Head中将css与html相连。 
@@ -58,6 +59,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 将index.html作为模板
 ----------------------------
+
 #. 新建 ``_layout``文件
 #. 在 layout 文件夹中新建 default.html 
 
