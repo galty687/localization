@@ -26,7 +26,7 @@ Jekyll的优势
 Windows下安装Jekyll
 -----------------------
 
-Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyInstaller <https://jekyllrb.com/docs/windows/>`_中的步骤。简要步骤如下：
+Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyInstaller <https://jekyllrb.com/docs/windows/>`_ 中的步骤。简要步骤如下：
 
 #. 下载 RubyInstaller，并安装
 #. 运行 ``gem install jekyll bundler``
@@ -50,14 +50,36 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 
 演示传统html网站的制作
----------------------------
+===============================
 
-#. 难以复用
+最早期的网站，需要不断手动增加所有内容，当内容足够多的时候，基本无法手动维护，很多内容难以复用。
+
+#. 修改index.hml的语言和编码
+
+.. code-block: html
+
+    <html lang="zh-cn">
+    <head>
+    <title>My first styled page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="mystyle.css"/>
+    </head>
 
 
 
 演示Jekyll建站
 ====================
+
+新建 _config.yml文件，配置网站基本信息
+
+.. code-block :: html
+
+        ---
+        layout: default
+        ---
+
+
+
 
 将index.html作为模板
 ----------------------------
@@ -67,6 +89,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
     .. code-block :: Liquid
         {{content}}
+
 
 
 
