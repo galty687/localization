@@ -68,7 +68,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 
 
-制作其他页面
+制作其他静态页面
 ----------------------------
 
     .. code-block :: html
@@ -77,3 +77,44 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
         layout: default
         ---
 
+
+制作news.html动态页面
+-------------------------
+
+#. 新建 _post 文件夹
+#. 在文件夹中增加两个markdown文件，并增加Front Matter
+
+..code-block: yaml
+    ---
+    title: PKU is great
+    layout: default
+    meta: This is an article about PKU.
+
+    ---
+
+#. 在news.html中新增加如下liquid模板
+
+.. code-block:: html
+
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+            <p>{{post.meta}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+将default模板拆解
+-------------------------
+#. 分别将 Nav, footer, address部分另存为 nav.html, footer.html, address.html
+#. 使用 {% include nav.html %} 将其添加至default模板，其他部分类似。
+
+
+
+将footer.html数据化
+--------------------------
+
+#. 新增 _data 文件夹，并在其中新建 website.yml   
+#. 在footer.hml中，使``{{site.data.website.copyright}}``填充数据
