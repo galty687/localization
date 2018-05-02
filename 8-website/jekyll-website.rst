@@ -4,8 +4,15 @@
 
 如果需要做网站本地化，则需要对网站制作技术本身有一些了解。目前制作网站的技术非常多，而且更多的网站制作技术还在不断涌现。本节将讲解如何使用Jekyll制作网站，并将其本地化。
 
+Jekyll的优势
+-----------------
+#. 访问速度快。
+#. 安全稳定。
+#. 自定义功
+#. Github的生态圈
 
-基础知识
+
+基础准备
 ================
 
 使用Jekyll建站，需要掌握如下基本知识：
@@ -32,6 +39,39 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 #. 复制STEP 7 中CSS的代码，并存储为 mystyle.css
 #. 在Head中将css与html相连。 
 
-.. code-block:: html
+    .. code-block:: html
 
-    <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="mystyle.css">
+
+
+
+
+演示传统html网站的制作
+---------------------------
+
+#. 难以复用
+
+
+
+演示Jekyll建站
+====================
+
+将index.html作为模板
+----------------------------
+#. 新建 ``_layout``文件
+#. 在 layout 文件夹中新建 default.html 
+
+    .. code-block :: Liquid
+        {{content}}
+
+
+
+制作其他页面
+----------------------------
+
+    .. code-block :: html
+
+        ---
+        layout: default
+        ---
+
