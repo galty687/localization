@@ -55,6 +55,8 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 最早期的网站，需要不断手动增加所有内容，当内容足够多的时候，基本无法手动维护，很多内容难以复用。
 
+**演示过程如下：**
+
 #. 修改index.hml的语言和编码，修改后的代码如下
 
 .. code-block:: html
@@ -121,11 +123,11 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 #. 新建 _post 文件夹
 #. 在文件夹中增加两个markdown文件，并增加Front Matter
 
-..code-block: html
+..code-block:: html
 
     ---
-    title: PKU is great
     layout: default
+    title: PKU is great
     meta: This is an article about PKU.
 
     ---
