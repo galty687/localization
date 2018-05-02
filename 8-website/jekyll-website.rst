@@ -54,7 +54,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 最早期的网站，需要不断手动增加所有内容，当内容足够多的时候，基本无法手动维护，很多内容难以复用。
 
-#. 修改index.hml的语言和编码
+#. 修改index.hml的语言和编码，修改后的代码如下
 
 .. code-block: html
 
@@ -64,6 +64,8 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="mystyle.css"/>
     </head>
+
+#. 增加footer的版权信息，并改变footer的背景色
 
 
 
@@ -84,7 +86,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 将index.html作为模板
 ----------------------------
 
-#. 新建 ``_layout``文件
+#. 新建 _layout 文件
 #. 在 layout 文件夹中新建 default.html 
 
     .. code-block :: Liquid
@@ -109,7 +111,8 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 #. 新建 _post 文件夹
 #. 在文件夹中增加两个markdown文件，并增加Front Matter
 
-..code-block: yaml
+..code-block: html
+
     ---
     title: PKU is great
     layout: default
@@ -142,4 +145,4 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 --------------------------
 
 #. 新增 _data 文件夹，并在其中新建 website.yml   
-#. 在footer.hml中，使``{{site.data.website.copyright}}``填充数据
+#. 在footer.hml中，使 ``{{site.data.website.copyright}}`` 填充数据
