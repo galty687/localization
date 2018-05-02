@@ -57,7 +57,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 #. 修改index.hml的语言和编码，修改后的代码如下
 
-.. code-block: html
+.. code-block:: html
 
     <html lang="zh-cn">
     <head>
