@@ -35,7 +35,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 素材
 -----------------
 
-为了演示方便，选择了W3C的HTML页面：`素材 <https://www.w3.org/Style/Examples/011/firstcss.en.html>`_
+为了演示方便，选择了W3C的HTML素材：`素材 <https://www.w3.org/Style/Examples/011/firstcss.en.html>`_
 
 素材准备：
 
@@ -88,7 +88,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
         title: 
         baseurl:
         languages:
-        
+
         ---
 
 
