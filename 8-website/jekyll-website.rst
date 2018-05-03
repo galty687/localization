@@ -106,7 +106,7 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
         {{content}}
 
 
-#. 在Terminal中运行 ``jekyll serve ``
+#. 在Terminal中运行 ``jekyll serve``
 #. 访问 http://127.0.0.1:4000/ 即可访问该站
 
 
@@ -126,7 +126,8 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 #. 新建 _post 文件夹
 #. 在文件夹中增加两个markdown文件，并增加 Front Matter 信息
 
-::
+.. code-block:: html
+
     ---
     layout: default
     title: PKU is great
