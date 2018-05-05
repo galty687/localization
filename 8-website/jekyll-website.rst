@@ -160,3 +160,10 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 #. 新增 _data 文件夹，并在其中新建 website.yml   
 #. 在footer.hml中，使 ``{{site.data.website.copyright}}`` 填充数据
+
+
+
+
+参考资料：
+
+`Jekyll Quick Reference (Cheat Sheet) <https://github.com/planetjekyll/quickrefs/blob/master/JEKYLL.md>`_
