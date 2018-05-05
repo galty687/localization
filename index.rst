@@ -58,7 +58,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 软件本地化综合实践
+   :caption: 网站本地化
 
    8-website/jekyll-website
    8-website/liquid
@@ -77,3 +77,4 @@
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
