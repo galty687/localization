@@ -6,7 +6,7 @@ Jekyll 常用代码
 使用_data/nav.yml构建导航栏
 =================================
 
-_data/nav.yml
+1. _data/nav.yml
 
 ::
 
@@ -24,7 +24,7 @@ _data/nav.yml
         subhref: "#"
 
 
-_includes/nav.html
+2. _includes/nav.html
 
  .. code-block:: html
 
@@ -57,3 +57,27 @@ _includes/nav.html
     .. note ::
 
         Note: U+25BC (&#x25BC;) is the unicode for a black down-pointing triange (e.g. ▼)    
+
+
+
+
+添加预估阅读时间
+====================
+
+1. 在post模板中 
+
+::
+
+    {% include reading_time.html %}
+
+2. 创建 _includes/reading_time.html
+
+::
+    <span class="reading-time" title="Estimated read time">
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+        1 min
+    {% else %}
+        {{ words | divided_by:180 }} mins
+    {% endif %}
+    </span>    
