@@ -166,4 +166,5 @@ Jekyll使用Ruby语言编写，可以参照官方文档 `Installation via RubyIn
 
 参考资料：
 
-`Jekyll Quick Reference (Cheat Sheet) <https://github.com/planetjekyll/quickrefs/blob/master/JEKYLL.md>`_
+* `Jekyll Quick Reference (Cheat Sheet) <https://github.com/planetjekyll/quickrefs/blob/master/JEKYLL.md>`_
+* Jekyll cheet sheet
