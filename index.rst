@@ -62,6 +62,7 @@
 
    8-website/jekyll-website
    8-website/liquid
+   8-website/jekyll-localization
    8-website/website-intl
    8-website/jekyll-snippets
    8-website/jekyll-plugins
