@@ -28,7 +28,7 @@ Jekyll网站本地化作业
 * _pages中的MD文件（将链接、代码等部分处理为相应的内嵌标签）
 * _layouts中homelay.html
 
-3. 将上述语言资源准备为SDL Trados的项目包，并提交至CATTP平台。
+3. 将上述语言资源准备为SDL Trados的项目包，并提交至 `CATTP平台 <http://cattp.pkucat.com/mod/assignment/view.php?id=5181>`_
 
 .. note::
 
