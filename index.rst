@@ -66,7 +66,7 @@
    8-website/website-intl
    8-website/jekyll-snippets
    8-website/jekyll-plugins
-   8-website/jekll-homework
+   8-website/jekyll-homework
 
 
 
