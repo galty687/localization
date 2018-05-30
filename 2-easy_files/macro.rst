@@ -25,21 +25,60 @@ Word 宏
 .. code-blocl:: vba
 
     Sub count_space()
-    Selection.WholeStory
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(['""\,\.\;\?\!/\-\':+])[ ^13]"
-        .Replacement.Text = " " & "\1" & " "
-        .Forward = True
-        .Wrap = wdFindContinue
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    MsgBox ActiveDocument.ComputeStatistics(statistic:=wdStatisticWords, IncludeFootnotesAndEndnotes:=True) & "words"
-    ActiveDocument.Undo 1
-            
-    
-End Sub
+        Selection.WholeStory
+        Selection.Find.ClearFormatting
+        Selection.Find.Replacement.ClearFormatting
+        With Selection.Find
+            .Text = "(['""\,\.\;\?\!/\-\':+])[ ^13]"
+            .Replacement.Text = " " & "\1" & " "
+            .Forward = True
+            .Wrap = wdFindContinue
+            .MatchWildcards = True
+        End With
+        Selection.Find.Execute Replace:=wdReplaceAll
+        MsgBox ActiveDocument.ComputeStatistics(statistic:=wdStatisticWords, IncludeFootnotesAndEndnotes:=True) & "words"
+        ActiveDocument.Undo 1
+    End Sub
+
+ .. code-block:: vba
+
+    Sub SaveAllAsDOCX()
+        Dim strFilename As String
+        Dim strDocName As String
+        Dim strPath As String
+        Dim oDoc As Document
+        Dim fDialog As FileDialog
+        Dim intPos As Integer
+        Set fDialog = Application.FileDialog(msoFileDialogFolderPicker)
+        With fDialog
+            .Title = "Select folder and click OK"
+            .AllowMultiSelect = False
+            ..InitialView = msoFileDialogViewList
+            If .Show <> -1 Then
+                MsgBox "Cancelled By User", , "List Folder Contents"
+                Exit Sub
+            End If
+            strPath = fDialog.SelectedItems.Item(1)
+            If Right(strPath, 1) <> "\" Then strPath = strPath + "\"
+        End With
+        If Documents.Count > 0 Then
+            Documents.Close SaveChanges:=wdPromptToSaveChanges
+        End If
+        If Left(strPath, 1) = Chr(34) Then
+            strPath = Mid(strPath, 2, Len(strPath) - 2)
+        End If
+        strFilename = Dir$(strPath & "*.doc")
+        While Len(strFilename) <> 0
+            Set oDoc = Documents.Open(strPath & strFilename)
+            strDocName = ActiveDocument.FullName
+            intPos = InStrRev(strDocName, ".")
+            strDocName = Left(strDocName, intPos - 1)
+            strDocName = strDocName & ".docx"
+            oDoc.SaveAs FileName:=strDocName, _
+                FileFormat:=wdFormatDocumentDefault
+            oDoc.Close SaveChanges:=wdDoNotSaveChanges
+            strFilename = Dir$()
+        Wend
+    End Sub
 
 
