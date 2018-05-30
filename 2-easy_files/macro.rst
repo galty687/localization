@@ -22,7 +22,7 @@ Word 宏
 
 统计字数时包含标点符号
 
-.. code-blocl:: vba
+ .. code-blocl:: vba
 
     Sub count_space()
         Selection.WholeStory
@@ -82,5 +82,29 @@ Word 宏
             strFilename = Dir$()
         Wend
     End Sub
+
+Title Case 
+
+ .. code-block:: vba
+
+    Sub TitleCase()
+        Dim lclist As String
+        Dim wrd As Integer
+        Dim sTest As String
+
+        ' list of lowercase words, surrounded by spaces
+        lclist = " of the by to this is from a "
+
+        Selection.Range.Case = wdTitleWord
+
+        For wrd = 2 To Selection.Range.Words.Count
+            sTest = Trim(Selection.Range.Words(wrd))
+            sTest = " " & LCase(sTest) & " "
+            If InStr(lclist, sTest) Then
+                Selection.Range.Words(wrd).Case = wdLowerCase
+            End If
+        Next wrd
+    End Sub
+
 
 更多常用VBA地址：`TT4T - Word Macros for Translators <http://necco.ca/dv/word_macros.htm>`_
