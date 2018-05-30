@@ -18,7 +18,7 @@
 
    2-easy_files/hidden-method-word
    2-easy_files/style-method-word
-   2-easy_files/
+   2-easy_files/macro.rst
    
 
 .. toctree::
