@@ -40,6 +40,8 @@ Word 宏
         ActiveDocument.Undo 1
     End Sub
 
+将doc转为docx
+
  .. code-block:: vba
 
     Sub SaveAllAsDOCX()
@@ -81,4 +83,4 @@ Word 宏
         Wend
     End Sub
 
-
+更多常用VBA地址：`TT4T - Word Macros for Translators <http://necco.ca/dv/word_macros.htm>`_
