@@ -49,7 +49,7 @@ Word 宏
 
 统计字数时包含标点符号
 
- .. code-blocl:: vba
+ ..code-block:: vba
 
     Sub count_space()
         Selection.WholeStory
