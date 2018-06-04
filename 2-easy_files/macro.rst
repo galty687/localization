@@ -42,6 +42,36 @@ Word 宏
 
 编写宏代码
 
+ .. code-block:: vba
+
+    Sub CopyHidePast()
+    '
+    ' CopyHidePast Macro
+    '
+    '
+    Dim n As Long
+    n = 1
+
+    While n < ActiveDocument.Paragraphs.Count
+
+
+        ActiveDocument.Paragraphs(n).Range.Select
+        Selection.Copy
+        With Selection.Font
+            .Hidden = True
+        End With
+        
+        Selection.EndKey unit:=wdLine
+        Selection.TypeParagraph
+        Selection.TypeParagraph
+        Selection.Paste
+        
+        n = n + 4
+
+    Wend
+
+    End Sub
+
 
 
 常用宏代码
