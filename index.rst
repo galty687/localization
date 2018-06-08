@@ -67,6 +67,7 @@
    8-website/jekyll-snippets
    8-website/jekyll-plugins
    8-website/jekyll-homework
+   10_term-paper/term-paper.rst
 
 
 
